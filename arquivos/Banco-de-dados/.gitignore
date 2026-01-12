@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+wa_session_cache/
+.vscode/
+desnecessarios/

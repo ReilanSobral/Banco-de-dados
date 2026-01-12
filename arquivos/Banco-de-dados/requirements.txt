@@ -1,0 +1,8 @@
+streamlit
+pandas
+plotly
+altair
+psycopg2-binary
+python-dotenv
+selenium
+webdriver-manager
