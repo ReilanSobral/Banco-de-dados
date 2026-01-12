@@ -189,8 +189,9 @@ if selected_page == "⚙️ Configurações":
                         
                     elif status == 'qr':
                         st.session_state['wa_status'] = False
-                        # Mostrar QR Code decodificado
-                        qr_place.image(base64.b64decode(data), caption="Escaneie este QR Code com seu celular", width=250)
+                        # Mostrar QR Code via HTML para evitar erro 'removeChild' (bug de concorrência do Streamlit)
+                        qr_html = f'<div style="text-align:center;"><img src="data:image/png;base64,{data}" width="250" style="border-radius:10px; border: 2px solid #e2e8f0;"/><p style="color:#64748b; margin-top:10px;">Escaneie com seu celular</p></div>'
+                        qr_place.markdown(qr_html, unsafe_allow_html=True)
                         st.info("Aguardando leitura do QR Code... Clique no botão novamente após escanear.")
                         
                     elif status == 'loading':
