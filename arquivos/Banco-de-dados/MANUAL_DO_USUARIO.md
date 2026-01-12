@@ -13,6 +13,10 @@ O sistema é uma aplicação Desktop/Web que roda localmente no computador da ON
     ```bash
     streamlit run app_ong.py
     ```
+    ou
+    
+    python -m streamlit run app_ong.py
+    
 3.  O sistema abrirá automaticamente no seu navegador padrão (geralmente `http://localhost:8501`).
 
 ---

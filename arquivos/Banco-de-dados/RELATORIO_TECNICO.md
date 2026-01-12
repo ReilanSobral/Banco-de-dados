@@ -50,5 +50,28 @@ O desenvolvimento seguiu princípios de "Privacy by Design":
 *   **Segurança no Código:** As credenciais do banco de dados não estão "chumbadas" no código, sendo carregadas via variáveis de ambiente (`.env`), prevenindo vazamentos caso o código seja compartilhado.
 *   **Integridade:** O banco relacional impede a exclusão acidental de eventos que possuem inscrições ativas (Foreign Key Constraints), protegendo o histórico da ONG.
 
+## 6. Acesso ao Projeto pelo github
+
+https://github.com/ReilanSobral/Banco-de-dados/tree/main/arquivos/Banco-de-dados
+
+## 7. Acesso ao banco de dados online
+Existe um banco de dados online postgress no site Render.com que foi criado para o projeto, ele esta hospedado na nuvem e pode ser acessado pelos dados abaixo:
+
+Dados para o professor acessar pelo DBeaver:
+
+Host: dpg-d5famdmuk2gs73859rt0-a.virginia-postgres.render.com
+Porta: 5432
+Database: postgres_vida_plena
+User: unifecaf
+Password: TesteBanco1!
+SSL: require
+Utilize essas informações em um software de banco de dados (como DBeaver, pgAdmin ou direto no código)
+Utilizando o DBeaver para acessar o banco de dados online veja os prints abaixo:
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
 ---
 *Este documento resume as decisões técnicas e teóricas do projeto.*
