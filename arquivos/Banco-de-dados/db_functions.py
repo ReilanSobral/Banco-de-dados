@@ -220,7 +220,7 @@ def get_dashboard_stats():
     cur.execute("SELECT COUNT(*) FROM eventos WHERE data_evento >= CURRENT_DATE")
     stats['eventos_ativos'] = cur.fetchone()[0]
     
-    cur.execute("SELECT COUNT(*) FROM inscricoes WHERE status = 'Confirmada'")
+    cur.execute("SELECT COUNT(*) FROM inscricoes WHERE status != 'Cancelada'")
     stats['total_inscricoes'] = cur.fetchone()[0]
     
     # Taxa de presença (simulada baseada em status 'Presente')

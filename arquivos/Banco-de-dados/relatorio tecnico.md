@@ -114,6 +114,8 @@ Database: postgres_vida_plena
 
 Usuário: unifecaf
 
+Password: TesteBanco1!
+
 SSL: required
 
 Evidências de Funcionamento e o banco ficará disponivel em render.com ate o dia 06/02/2026
